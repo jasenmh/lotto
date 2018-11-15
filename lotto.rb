@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def get_number
-	printf 'enter the ticket number: '
+	printf 'Enter the ticket number: '
 	number = gets.chomp
 	number.split
 end
@@ -42,11 +42,11 @@ def result_is_winner(result)
 	false
 end
 
-puts "winning number first"
+puts "Winning number first:"
 winning_number = get_number
 
 tickets = []
-puts "enter ticket numbers (enter to stop)"
+puts "Enter ticket numbers (enter to stop):"
 while (ticket_number = get_number).length > 0
 	tickets += [ ticket_number ]
 end

@@ -60,3 +60,5 @@ tickets.each do |ticket_number|
 	multiplier = result[1] ? 'Y' : 'N'
 	puts "  #{winner}  |#{format_number(ticket_number)} |    #{result[0]}    |      #{multiplier}"
 end
+
+printf("Tickets compared: %d\n", tickets.length)
